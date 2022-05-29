@@ -2,13 +2,21 @@ body {
   background-color: #282c34;
   min-height: 100vh;
   color: #ccc;
-  display: flex;
-  flex-direction: column;
+
   padding: 15px 20px;
+  a {
+    color: #aaa;
+    text-decoration: none;
+  }
+
+  a.active {
+    color: yellow;
+  }
 
   .App {
     display: flex;
     flex-direction: column;
+
     h1 {
       align-self: center;
     }

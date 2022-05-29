@@ -1,11 +1,25 @@
 import './App.scss';
+import { Routes, Route, NavLink, Navigate } from 'react-router-dom';
+import { PageWelcome } from './pages/PageWelcome';
+import { PageBooks } from './pages/PageBooks';
+import { PageAbout } from './pages/PageAbout';
 
 function App() {
   return (
     <div className='App'>
-      <h1>Frontend-React-Site-Example</h1>
-      <p>Welcome to this site.</p>
-      <img src='images/bashCookbook.jpg' alt='bashbook cover' />
+      <hr />
+      <nav>
+        <NavLink to='welcome'>Welcome</NavLink> |{' '}
+        <NavLink to='books'>Books</NavLink> |{' '}
+        <NavLink to='about'>About</NavLink>
+      </nav>
+      <hr />
+      <Routes>
+        <Route path='welcome' element={<PageWelcome />} />
+        <Route path='books' element={<PageBooks />} />
+        <Route path='about' element={<PageAbout />} />
+        <Route path='/' element={<Navigate to='welcome' />} />
+      </Routes>
     </div>
   );
 }
