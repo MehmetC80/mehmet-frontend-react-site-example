@@ -4,8 +4,6 @@ export const PageWelcome = () => {
       <h1>Frontend-React-Site-Example</h1>
       <h2>Welcome</h2>
       <p>This is the welcome page.</p>
-
-      <img src='images/bashCookbook.jpg' alt='bashbook cover' />
     </div>
   );
 };
