@@ -23,7 +23,7 @@ export const PageBooks = () => {
       <img src='images/bashCookbook.jpg' alt='bashbook cover' />
 
       <div className='techBooks'>
-        <p>Also fetch books from ohter sites: </p>
+        <p>Also fetch {books.length} books from ohter sites: </p>
         <ul>
           {books.map((book) => {
             return <li key={book.id}> {book.title}</li>;

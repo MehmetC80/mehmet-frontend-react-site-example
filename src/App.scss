@@ -24,4 +24,17 @@ body {
       width: 170px;
     }
   }
+
+  .books {
+    .techBooks {
+      ul {
+        li {
+          list-style-type: none;
+          font-weight: bold;
+          margin: 10px 0;
+          color: darkkhaki;
+        }
+      }
+    }
+  }
 }
